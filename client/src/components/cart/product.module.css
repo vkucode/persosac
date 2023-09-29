@@ -1,0 +1,175 @@
+.containerProducts{
+    min-height: 100vh;
+}
+.BackgroundS1{
+    background: #2F3FB7;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60.8%, 0% 84.3%);
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.SacAvecPoignetSection{
+    height: 100vh;
+    overflow-y: hidden;
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+}
+.productContainer{
+    width: 100%;
+    margin-top: 5vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textHDContainerProduct{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.textHDContainerProduct > h1{
+    font-family: 'Antique';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 150px;
+    rotate: -5deg;
+}
+.textHDContainerProduct > div{
+    margin-top: -30px;
+    rotate: -5deg
+}
+.textHDContainerProduct > div > h3{
+    font-family: 'Antique';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 40px;
+}
+.lineImg{
+    width: 250px;
+}
+.imgProducts{
+    margin-top: 3%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imgProducts > img{
+    width: 100%;
+    margin-left: 5%;
+    max-width: 550px;
+}
+/*Product Details Section*/
+
+.productDetails{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.productDetails > button{
+    color: #fff;
+    font-size: 25px;
+    font-family: "Antique";
+    text-transform: uppercase;
+    background: #2F3FB7;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: inset 0px 3px 5px #202b79;
+}
+.colorSwitchContainer{
+    margin-top: 15px;
+    color: #fff;
+    font-family: 'Antique';
+    width: 250px;
+    border-radius: 20px;
+    padding: 5px 15px;
+    background: #242633;
+    display: flex;
+    align-items: center;
+}
+.spehereClick{
+    width: 250px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+}
+.spehereClick > img{
+    width: 40px;
+    position: absolute;
+    left: 10px;
+}
+.frstColorText{
+    position: relative;
+    margin-bottom: 0px;
+    z-index: 1;
+    display: block;
+    right: -65px;
+}
+.scndColorText{
+    position: relative;
+    margin-bottom: 0px;
+    z-index: 1;
+    display: none;
+    right: -55px;
+}
+.dimensionsContainer{
+    margin-top: 15px;
+}
+.dimenionsBTN{
+    color: #fff;
+    font-size: 23px;
+    font-family: "Antique";
+    text-transform: uppercase;
+    background: #373737;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: inset 0px 3px 5px #212121;
+}
+.dimensionsDetails{
+    margin-top: 5px;
+    font-family: "Antique";
+    background: #373737;
+    color: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.dimensionsDetails > hr{
+    background-color: #fff!important;
+    stroke: #fff;
+    height: 2px;
+}
+.CommandBTN{
+    color: #fff;
+    margin-top: 20px;
+    font-size: 23px;
+    font-family: "Antique";
+    text-transform: uppercase;
+    background: #FF3F65;
+    border: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    box-shadow: inset 0px 3px 5px #d23453;
+}
