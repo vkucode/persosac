@@ -1,5 +1,22 @@
 .containerProducts{
+    position: absolute;
+    left: 0;
+    top: 0;
     min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+}
+.containerWrapper{
+    position: absolute;
+    left: 0;
+    top: 0;
+    min-height: 100vh;
+    width: 200vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
 }
 .BackgroundS1{
     background: #2F3FB7;
@@ -11,20 +28,10 @@
     top: 0;
     left: 0;
 }
-.SacAvecPoignetSection{
-    height: 100vh;
-    overflow-y: hidden;
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center bottom;
-}
+
 .productContainer{
     width: 100%;
-    margin-top: 5vh;
+    margin-top: 0vh;
     position: relative;
     z-index: 2;
     display: flex;
@@ -46,6 +53,10 @@
     rotate: -5deg;
 }
 .textHDContainerProduct > div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     margin-top: -30px;
     rotate: -5deg
 }
@@ -66,10 +77,18 @@
     justify-content: center;
     align-items: center;
 }
-.imgProducts > img{
+.productImgSac{
     width: 100%;
-    margin-left: 5%;
+    margin-left: 15%;
     max-width: 550px;
+}
+.myLogoOnProduct{
+    position: absolute;
+    margin-top: -5%;
+    margin-left: -3%;
+    transform: skew(-3deg, -5deg);
+    width: 150px;
+    max-height: 150px;
 }
 /*Product Details Section*/
 
@@ -89,47 +108,42 @@
     border-radius: 20px;
     padding: 5px 15px;
     box-shadow: inset 0px 3px 5px #202b79;
+    transition: 0.3s all ease-in-out;
+}
+.productDetails > button:hover{
+    background: #FF3F65;
+    box-shadow: inset 0px 3px 5px #d23453;
 }
 .colorSwitchContainer{
     margin-top: 15px;
-    color: #fff;
+    color: #000;
     font-family: 'Antique';
     width: 250px;
     border-radius: 20px;
     padding: 5px 15px;
-    background: #242633;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
-.spehereClick{
-    width: 250px;
-    cursor: pointer;
-    position: absolute;
-    z-index: 2;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    align-items: center;
+.colorSwitchContainer > button{
+    padding: 5px 15px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background: #000;
+    color: #fff;
+    transition: 0.3s all ease-in-out;
 }
-.spehereClick > img{
-    width: 40px;
-    position: absolute;
-    left: 10px;
+.colorSwitchContainer > button:hover{
+    background: #2F3FB7;
+    box-shadow: inset 0px 3px 5px #202b79;
 }
-.frstColorText{
-    position: relative;
-    margin-bottom: 0px;
-    z-index: 1;
-    display: block;
-    right: -65px;
+.colorSwitchContainer > button.active{
+    background: #FF3F65;
+    box-shadow: inset 0px 3px 5px #d23453;
 }
-.scndColorText{
-    position: relative;
-    margin-bottom: 0px;
-    z-index: 1;
-    display: none;
-    right: -55px;
-}
+
 .dimensionsContainer{
     margin-top: 15px;
 }

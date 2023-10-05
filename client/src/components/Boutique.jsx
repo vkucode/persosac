@@ -2,17 +2,16 @@ import React from 'react'
 import classes from '../assets/css/boutique.module.css'
 import Cart from './cart/Cart';
 import ProductItem from './cart/ProductItem';
-import lottie from 'lottie-web'
-import { defineElement } from 'lord-icon-element';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const Boutique = () => {
+
   return (
     <>
         <div className={`${classes.mainContainerBoutique} container-fluid`}>
-          <div className='container'>
+          <div className={`${classes.ContainerWrapItems} container`}>
             <ProductItem />
-          </div>
+            </div>
           <Cart />
         </div>
     
