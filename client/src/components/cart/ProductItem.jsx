@@ -99,6 +99,9 @@ const Products = () => {
                                             </button>
                                         ))}
                                     </div>
+                        <div className={`${classes.dimensionsContainer}`}>
+                            
+                        </div>
                     </div>
                     
                 </div>

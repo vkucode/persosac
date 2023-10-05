@@ -19,7 +19,7 @@ export const products = [
     id: 2,
     name: "Le sac sos",
     category: "le sos",
-    type: "",
+    type: "dfnfd",
     price: 24,
     quantity: 1,
     dimensionName: ["standard", "petit model"],
