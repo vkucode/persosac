@@ -9,9 +9,10 @@ export const products = [
     type: "avec poignet",
     price: 12,
     quantity: 1,
-    dimensionName: ["standard", "petit model"],
-    dimensionStandard: "30-16-40 cm",
-    dimensionPetitModel: "10-15-30 cm",
+    dimensions: [
+      { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
+      { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
+    ],
     img: [sacPoigneeBlancLogo, sacPoigneeBrun],
     colorSac: ["Blanc", "Brun"],
   },
