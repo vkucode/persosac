@@ -3,8 +3,8 @@
     z-index: 9999;
     bottom: 6%;
     right: 3%;
-    height: 60px;
-    width: 100%;
+    height: 70px;
+    width: fit-content;
 }
 
 .CardTitle{
@@ -146,4 +146,13 @@
 }
 .controls > span{
     cursor: pointer;
+}
+@media (max-width: 572px) {
+    .container{
+        position: fixed;
+        z-index: 9999;
+        bottom: 6%;
+        right: -2%;
+        height: 70px;
+    }
 }

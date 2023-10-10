@@ -146,6 +146,7 @@
     box-shadow: inset 0px 3px 5px #d23453;
 }
 
+/*Dimensions Section*/
 .dimensionsContainer{
     margin-top: 30vh;
     position: absolute;
@@ -196,11 +197,6 @@
     background-color: #FF3F65;
     box-shadow: inset 0px 3px 5px #d23453;
 }
-.dimensionsDetails > hr{
-    background-color: #fff!important;
-    stroke: #fff;
-    height: 2px;
-}
 .CommandBTN{
     display: flex;
     justify-content: center;
@@ -221,4 +217,192 @@
 .CommandBTN:hover{
     background: #2F3FB7;
     box-shadow: inset 0px 3px 5px #202b79;
+}
+
+/*Media Responsive CSS*/
+@media (max-width: 1200px) {
+    .myLogoOnProduct{
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -10%;
+        transform: skew(-3deg, -5deg);
+        width: 150px;
+        mix-blend-mode: multiply;
+        max-height: 150px;
+    }
+    .dimensionsContainer{
+        margin-top: 30vh;
+        position: absolute;
+        width: fit-content;
+        right: 5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 991px) {
+    .myLogoOnProduct{
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -18%;
+        transform: skew(-3deg, -5deg);
+        width: 150px;
+        mix-blend-mode: multiply;
+        max-height: 150px;
+    }
+    .dimensionsContainer{
+        margin-top: 30vh;
+        position: absolute;
+        width: fit-content;
+        right: 0%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media (max-width: 767px) {
+    .myLogoOnProduct{
+        position: absolute;
+        margin-top: -5%;
+        margin-left: -25%;
+        transform: skew(-3deg, -5deg);
+        width: 150px;
+        mix-blend-mode: multiply;
+        max-height: 150px;
+    }
+    .dimensionsContainer{
+        margin-top: 30vh;
+        position: absolute;
+        width: fit-content;
+        right: -10%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .textHDContainerProduct > h1{
+        font-family: 'Antique';
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 100px;
+        rotate: -5deg;
+    }
+    .lineImg{
+        width: 110px;
+    }
+    .textHDContainerProduct > div{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        rotate: -5deg
+    }
+    .textHDContainerProduct > div > h3{
+    font-family: 'Antique';
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 20px;
+}
+.imgProducts{
+    margin-top: 3%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width: 572px) {
+    .textHDContainerProduct{
+        margin-top: 3vh;
+    }
+    .textHDContainerProduct > h1{
+        font-family: 'Antique';
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 70px;
+        rotate: -5deg;
+    }
+    .imgProducts{
+        margin-top: 3%;
+        margin-left: -5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .dimensionsContainer{
+        margin-top: 30vh;
+        position: absolute;
+        width: fit-content;
+        right: -5%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .dimenionsBTN{
+        color: #fff;
+        cursor: auto;
+        font-size: 15px;
+        font-family: "Antique";
+        text-transform: uppercase;
+        background: #373737;
+        border: none;
+        border-radius: 20px;
+        padding: 5px 15px;
+        box-shadow: inset 0px 3px 5px #212121;
+    }
+
+    .dimensionsDetails > button{
+        color: #fff;
+        cursor: pointer;
+        font-size: 15px;
+        border: none;
+        background-color: #373737;
+        box-shadow: inset 0px 3px 5px #212121;
+        padding: 8px 15px;
+        border-radius: 15px;
+        margin-bottom: 10px;
+    }
+    .dimensionsDetails > button > h3{
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+    .dimensionsDetails > button.active{
+        background-color: #FF3F65;
+        box-shadow: inset 0px 3px 5px #d23453;
+    }
+    .productDetails > button{
+        color: #fff;
+        font-size: 15px;
+    }
+    .colorSwitchContainer{
+        justify-content: space-around;
+    }
+    .colorSwitchContainer > button{
+        padding: 5px 15px;
+        font-size: 15px;
+    }
+    .CommandBTN{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        margin-top: 10px;
+        font-size: 15px;
+        font-family: "Antique";
+        text-transform: uppercase;
+        background: #FF3F65;
+        border: none;
+        border-radius: 20px;
+        padding: 0px 15px;
+        box-shadow: inset 0px 3px 5px #d23453;
+        transition: 0.3s all ease-in-out;
+    }
 }
