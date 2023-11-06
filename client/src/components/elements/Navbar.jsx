@@ -4,10 +4,13 @@ import { Link } from 'react-router-dom'
 import gsap from 'gsap';
 import { Power2 } from 'gsap';
 import ImgPersosac from '../../assets/img/LogoPersosac.svg';
-import ImgPersoconept from '../../assets/img/partners/Logo_White.svg'
 import logoVkuCode from '../../assets/img/partners/VKUlogoNOBG.svg'
+import lottie from "lottie-web";
+import { defineElement } from "@lordicon/element";
+defineElement(lottie.loadAnimation);
 
 const Navbar = () => {
+
   const dateRef = useRef(null);
   const menuToggleRef = useRef(null);
   const menuBar = gsap.timeline({ paused: true });
@@ -22,8 +25,6 @@ const Navbar = () => {
     if (dateRef.current) {
       dateRef.current.innerHTML = new Date().getFullYear();
     }
-
-   
 
     menuBar.to(".bar-1", 0.5, {
       attr: { d: "M8,2 L2,8" },
@@ -114,6 +115,9 @@ const Navbar = () => {
           <div className="brand-logo">
             <Link onClick={closeMenu} to="/accueil"><img src={ImgPersosac} alt="" /></Link>
           </div>
+          <div>
+            <Link onClick={closeMenu} className="navLinkBoutique" to="/boutique">commander <lord-icon trigger="loop" delay="5000" colors="primary:#ffffff" src="https://cdn.lordicon.com/pbrgppbb.json"></lord-icon></Link>
+          </div>
           <button className="menu-toggle" id="menuToggle" ref={menuToggleRef}>
             <svg viewBox="0 0 12 10" className="hamburger" height="40px" width="40px">
               <path d="M10,2 L2,2" className="bar-1"></path>
@@ -121,6 +125,7 @@ const Navbar = () => {
               <path d="M10,8 L2,8" className="bar-3"></path>
             </svg>
           </button>
+          
         </div>
         
       </header>
@@ -147,7 +152,7 @@ const Navbar = () => {
               <li><a href="https://www.facebook.com/profile.php?id=100086298938654"><i className="fa-brands fa-square-facebook"></i></a></li>
               <li><a href="https://www.instagram.com/diwadrink/"><i className="fa-brands fa-instagram"></i></a></li>
               <li className="copyrightPart">
-                &copy;<span id="date" ref={dateRef}></span>&nbsp;Diwa-drink&nbsp;Designed&nbsp;by&nbsp;<a href="https://www.persoconcept.fr/"><img src={ImgPersoconept} alt="" width="30px" /></a>&nbsp;|&nbsp;Powered&nbsp;by&nbsp;<a href="https://vkucode.com/"><img src={logoVkuCode} alt="" width="25px" /></a>
+                &copy;<span id="date" ref={dateRef}></span>&nbsp;Persosac&nbsp;&nbsp;|&nbsp;Powered&nbsp;by&nbsp;<a href="https://vkucode.com/"><img src={logoVkuCode} alt="" width="25px" /></a>
               </li>
             </ul>
           </div>

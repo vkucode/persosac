@@ -160,7 +160,7 @@ const Products = () => {
             ))};
             <div className={`${classes.NavigationButtons}`}>
                 <div className={`${classes.BtnLeft}`}>
-                <h4>Precedant</h4>
+                {/* <h4>Precedant</h4> */}
                 <lord-icon
                     src="https://cdn.lordicon.com/sacafwsi.json"
                     trigger="hover"
@@ -171,7 +171,7 @@ const Products = () => {
                 </lord-icon>
                 </div>
                 <div className={`${classes.BtnRight}`}>
-                <h4>Suivant</h4>
+                {/* <h4>Suivant</h4> */}
                 <lord-icon
                     src="https://cdn.lordicon.com/sacafwsi.json"
                     trigger="hover"

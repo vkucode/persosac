@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@lordicon/element": "^1.1.0",
+    "@lordicon/element": "^1.2.0",
     "@lordicon/react": "^1.1.0",
     "@stripe/stripe-js": "^2.1.10",
     "animate.css": "^4.1.1",
