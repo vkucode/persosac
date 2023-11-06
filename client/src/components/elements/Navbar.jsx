@@ -3,7 +3,8 @@ import '../../assets/css/navbar.css';
 import { Link } from 'react-router-dom'
 import gsap from 'gsap';
 import { Power2 } from 'gsap';
-import ImgPersoconept from '../../assets/img/partners/PersoConcept_Logo.svg';
+import ImgPersosac from '../../assets/img/LogoPersosac.svg';
+import ImgPersoconept from '../../assets/img/partners/Logo_White.svg'
 import logoVkuCode from '../../assets/img/partners/VKUlogoNOBG.svg'
 
 const Navbar = () => {
@@ -99,7 +100,7 @@ const Navbar = () => {
     return () => {
       returnRemove();
     };
-}, []);
+});
 
   return (
     <>
@@ -111,7 +112,7 @@ const Navbar = () => {
       <header>
         <div className="header-row">
           <div className="brand-logo">
-            <Link onClick={closeMenu} to="/accueil"><img src={ImgPersoconept} alt="" /></Link>
+            <Link onClick={closeMenu} to="/accueil"><img src={ImgPersosac} alt="" /></Link>
           </div>
           <button className="menu-toggle" id="menuToggle" ref={menuToggleRef}>
             <svg viewBox="0 0 12 10" className="hamburger" height="40px" width="40px">
@@ -121,6 +122,7 @@ const Navbar = () => {
             </svg>
           </button>
         </div>
+        
       </header>
 
       <section className="fullpage-menu">
@@ -141,7 +143,7 @@ const Navbar = () => {
 
           <div className="header-nav-footer">
             <ul className="social-links">
-              <li><a href="#">&nbsp;</a></li>
+              <li><p>&nbsp;</p></li>
               <li><a href="https://www.facebook.com/profile.php?id=100086298938654"><i className="fa-brands fa-square-facebook"></i></a></li>
               <li><a href="https://www.instagram.com/diwadrink/"><i className="fa-brands fa-instagram"></i></a></li>
               <li className="copyrightPart">

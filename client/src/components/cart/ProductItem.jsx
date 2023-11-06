@@ -1,13 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { useCartContext } from '../../ctx/cartContext';
 import classes from './product.module.css';
-import { products } from '../../data/data';
+import { products } from '../../data/data.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import lineRightImg from '../../assets/img/Bande_rouge_avec_poignet.png'
 import 'animate.css'
 import imgMyLogoImg from '../../assets/img/Logo.png'
 import lottie from 'lottie-web'
-import { defineElement } from 'lord-icon-element';
+import { defineElement } from '@lordicon/element';
 
 const Products = () => {
     const { addProduct } = useCartContext();
@@ -89,6 +89,7 @@ const Products = () => {
             <div className={`${classes.BackgroundS1}`}></div>
             <div className={`${classes.containerWrapper}`}>
             {products.map((product) => (
+            <>
             <section className={`${classes.productContainer} container`} key={product.id}>
                 <div className={`row`}> 
                     <div className={`${classes.textHDContainerProduct} col-12`}>
@@ -103,7 +104,7 @@ const Products = () => {
                         <img src={userLogo || imgMyLogoImg} alt="" className={`${classes.myLogoOnProduct}`} />
                     </div>
                     <div className={`${classes.dimensionsContainer}`}>
-                        <button className={`${classes.dimenionsBTN}`}>Dimensions</button>
+                        <p className={`${classes.dimenionsBTN}`}>Dimensions</p>
                         <div className={`${classes.dimensionsDetails}`}>
                         {product.dimensions && product.dimensions.map((dimension, index) => (
                     <button 
@@ -154,7 +155,33 @@ const Products = () => {
                     
                 </div>
             </section>
+
+            </>
             ))};
+            <div className={`${classes.NavigationButtons}`}>
+                <div className={`${classes.BtnLeft}`}>
+                <h4>Precedant</h4>
+                <lord-icon
+                    src="https://cdn.lordicon.com/sacafwsi.json"
+                    trigger="hover"
+                    stroke="bold"
+                    state="hover-slide"
+                    colors="primary:#000"
+                    style={{width:"250px",height:"100px", rotate: "180deg"}}>
+                </lord-icon>
+                </div>
+                <div className={`${classes.BtnRight}`}>
+                <h4>Suivant</h4>
+                <lord-icon
+                    src="https://cdn.lordicon.com/sacafwsi.json"
+                    trigger="hover"
+                    stroke="bold"
+                    state="hover-slide"
+                    colors="primary:#000"
+                    style={{width:"250px",height:"100px"}}>
+                </lord-icon>
+                </div>
+            </div>
             </div>
             
         </section>

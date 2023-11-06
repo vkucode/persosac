@@ -2,8 +2,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #2F3FB7!important;
+    background: #fff!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     min-height: 100vh;
     height: 100%;
+}
+.LogoMainPage{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
 }

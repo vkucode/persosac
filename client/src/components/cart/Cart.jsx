@@ -3,7 +3,7 @@ import { loadStripe } from '@stripe/stripe-js'
 import axios from 'axios'
 import classes from './cart.module.css'
 import lottie from 'lottie-web'
-import { defineElement } from 'lord-icon-element';
+import { defineElement } from '@lordicon/element';
 import { AiOutlineClose} from 'react-icons/ai'
 import {FiChevronsRight} from 'react-icons/fi'
 import { useCartContext } from '../../ctx/cartContext'
