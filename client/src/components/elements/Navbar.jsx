@@ -115,9 +115,6 @@ const Navbar = () => {
           <div className="brand-logo">
             <Link onClick={closeMenu} to="/accueil"><img src={ImgPersosac} alt="" /></Link>
           </div>
-          <div>
-            <Link onClick={closeMenu} className="navLinkBoutique" to="/boutique">commander <lord-icon trigger="loop" delay="5000" colors="primary:#ffffff" src="https://cdn.lordicon.com/pbrgppbb.json"></lord-icon></Link>
-          </div>
           <button className="menu-toggle" id="menuToggle" ref={menuToggleRef}>
             <svg viewBox="0 0 12 10" className="hamburger" height="40px" width="40px">
               <path d="M10,2 L2,2" className="bar-1"></path>

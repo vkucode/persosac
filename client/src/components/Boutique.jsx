@@ -10,6 +10,8 @@ const Boutique = () => {
     <>
         <div className={`${classes.mainContainerBoutique} container-fluid`}>
           <div className={`${classes.ContainerWrapItems} container`}>
+            <h1>Boutique</h1>
+            <hr />
             <ProductItem />
             </div>
           <Cart />

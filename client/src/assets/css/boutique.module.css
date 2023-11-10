@@ -1,12 +1,19 @@
+
 .mainContainerBoutique{
     position: absolute;
     top: 0;
     left: 0;
-    background: #fff!important;
+    background: #2F3FB7!important;
+    color: #fff;
     width: 100%;
     min-height: 100vh;
     height: 100%;
 }
 .ContainerWrapItems{
+    margin-top: 8vh;
     overflow: hidden;
+}
+.ContainerWrapItems > h1{
+    font-family: 'Antique';
+    font-size: 80px;
 }

@@ -10,7 +10,7 @@ import { useCartContext } from '../../ctx/cartContext'
 
 const Cart = () => {
     defineElement(lottie.loadAnimation);
-    const pkstridiw = 'pk_test_51Np7ODGz9y9US4CrIT0z5CZyCOZD38caiLHuBWuQDa5jQljiu6jmTqjysjOyqCFB2Ycsjeh4oA7FJUPxQdKEldBx00qPryLGBw';
+    const pkstridiw = 'pk_test_51NNYyrG4UbGwE58sRuCbmfF511tTXN7izp7U6DzGtAvG3n2twvakFZN91AG6mAtFS1QvjMXFeg5HZmip036VXzG700dMUfR9w0';
     const { products, toggleCart, isOpen, removeProduct } = useCartContext()
     const stripePromise = loadStripe(pkstridiw);
 
@@ -37,7 +37,7 @@ const Cart = () => {
             quantity: item.quantity
         }));
 
-        const { data } = await axios.post('https://diwa-drink.fr/checkout', { lineItems, productDetails });
+        const { data } = await axios.post('https://persosac.fr/checkout', { lineItems, productDetails });
 
         const stripe = await stripePromise;
         await stripe.redirectToCheckout({ sessionId: data.id });
