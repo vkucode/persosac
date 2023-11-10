@@ -1,36 +1,63 @@
 import sacPoigneeBlancLogo from "../assets/img/Sac_PoignetBlanc.png";
 import sacPoigneeBrun from "../assets/img/Sac_PoignetBrun.png";
 import sacPoigneePlatBlanc from "../assets/img/Sac_PoignetBlanc.png";
+import sacPlat3d from "../assets/objects/sacPlat.gltf";
+import sacSOS from "../assets/objects/sacSOS.gltf";
+import sacTors from "../assets/objects/sacTors.gltf";
 
 export const products = [
   {
     id: 1,
     name: "Le sac avec poignet",
     category: "le sac",
-    type: "avec poignet",
+    objet: sacPlat3d,
+    type: "plat",
     price: 12,
-    dataColor: "#E8EBFA",
     quantity: 1,
     dimensions: [
       { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
       { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
     ],
     img: [sacPoigneeBlancLogo, sacPoigneeBrun],
-    colorSac: ["Blanc", "Brun"],
+    colorSac: [
+      { colorName: "Blanc", colorData: "#ffffff" },
+      { colorName: "Brown", colorData: "#d7ae55" },
+    ],
   },
-
   {
     id: 2,
-    name: "Le sac sos",
-    category: "le sos",
+    name: "Le SOS",
+    category: "le sac",
+    objet: sacSOS,
     type: "sos",
-    dataColor: "#E8EBFA",
-    price: 24,
+    price: 12,
     quantity: 1,
-    dimensionName: ["standard", "petit model"],
-    dimensionStandard: "30-16-40 cm",
-    dimensionPetitModel: "10-15-30 cm",
+    dimensions: [
+      { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
+      { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
+    ],
     img: [sacPoigneeBlancLogo, sacPoigneeBrun],
-    colorSac: ["Blanc", "Brun"],
+    colorSac: [
+      { colorName: "Blanc", colorData: "#ffffff" },
+      { colorName: "Brown", colorData: "#d7ae55" },
+    ],
+  },
+  {
+    id: 3,
+    name: "Le Torsade",
+    category: "le sac",
+    objet: sacTors,
+    type: "tors",
+    price: 12,
+    quantity: 1,
+    dimensions: [
+      { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
+      { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
+    ],
+    img: [sacPoigneeBlancLogo, sacPoigneeBrun],
+    colorSac: [
+      { colorName: "Blanc", colorData: "#ffffff" },
+      { colorName: "Brown", colorData: "#d7ae55" },
+    ],
   },
 ];
