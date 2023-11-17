@@ -2,129 +2,220 @@
 body{
     background: #E8EBFA!important;
 }
-.mainContainerAccueil{
+.heroSection{
     position: relative;
-    top: 0;
-    left: 0;
+    top: 85px;
+}
+.carouselWrap{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
-    min-height: 100vh;
-    height: 100%;
 }
-.mainContainerOverlay{
-    position: absolute;
-    z-index: -1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    min-height: 100vh;
-    height: 100%;
-    background: #2F3FB7!important;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 58.8%, 0% 84.8%);
-}
-.LogoMainPage{
+.carouselElement{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.LogoMainPage > img{
+    overflow: hidden;
     width: 100%;
-    max-width: 600px;
-    height: auto;
+    justify-content: center;
+    font-family: 'Arnel';
+    text-transform: uppercase;
+    color: #29548E;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
 }
-.heroSacsContainer{
+.carouselElementText > h1{
+    font-size: 150px;
+}
+.carouselElementText > h2{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: baseline;
+    line-height: 0.3;
+    font-size: 200px;
 }
-.SacsContainer {
-    position: relative;
-    z-index: 1;
+.carouselElementText > h2 > span{
+    color: #73B2F0;
 }
-.SacsContainer > img{
-    width: 100%;
-    max-width: 700px;
+.carouselElementText > h2 > img{
+    width: 20px;
 }
-.redBlobAnim{
-    position: absolute;
-    z-index: 0;
-    width: 100%;
-    left: -10%;
-    max-width: 500px;
-    animation: rotating 20s infinite linear;
-}
-@keyframes rotating {
-    0%{
-        rotate: 0deg;
-    }
-    100%{
-        rotate: 360deg;
-    }
+.carouselElementImage{
+    margin-top: -80px;
 }
 
-/* Boutique Lien Section*/
-.boutiqueTittle{
+/* Top Vente Section*/
+.topVenteSection{
     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.TPHeaderText{
+    width: 100%;
+    display: flex;
+    color: #fff;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
-    font-family: 'Antique';
 }
-.boutiqueTittle > h1{
-    color: #2F3FB7;
-    font-size: 70px;
-}
-.boutiqueTittle > span {
-    color: #fff;
-    font-size: 35px;
-    padding: 5px 15px;
-    border-radius: 20px;
-    background: #FF3F65;
-    box-shadow: inset 0px 3px 5px #d23453;
-}
-.boutiqueProducts{
+.TPHeaderText > h1{
+    text-align: center;
+    position: relative;
+    z-index: 2;
     display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-family: "Arnel";
     flex-direction: row;
+    width: 100%;
+    background: #29548E;
+    box-shadow: 0px 2px 5px 3px #000;
+    font-size: 100px;
+}
+.TPHeaderText > p{
+    text-align: center;
+    display: flex;
+    font-family: "Gexo Bold";
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: row;
+    margin-top: -7px;
+    width: 100%;
+    background: #606777;
+    font-size: 30px;
+}
+
+
+.topVenteProduits{
+    display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
 }
-.productCard {
+.productCard{
+    width: auto;
+    overflow: hidden;
+    padding: 15px;
+    cursor: pointer;
     display: flex;
     background: #fff;
-    color: #232e80;
-    flex-direction: column;
-    align-items: center;
-    text-transform: uppercase;
-    font-family: 'Antique';
     border-radius: 20px;
-    padding: 0px 0px 15px 0px;
     justify-content: center;
-    transition: 0.3s all ease-in-out;
+    align-items: center;
+    flex-direction: column;
 }
-.productCard:hover{
-    background: #2F3FB7;
+.productCard:hover .blueEllipse {
+    transform: scale(4);
+    transition: transform 0.7s ease;
+  }
+.productTopPart{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.productImage{
+    position: relative;
+    z-index: 2;
+    width: 300px;
+    height: auto;
+}
+.blueEllipse{
+    position: relative;
+    margin-top: -150%;
+    z-index: 1;
+    width: 220px;
+    transition: transform 0.3s ease;
+}
+.productDetails{
+    position: relative;
+    color: #29548E;
+    z-index: 2;
+    font-family: 'Gexo';
+}
+.productDetails h1{
+    font-family: 'Gexo Bold';
+    text-transform: uppercase;
+    font-size: x-large;
+}
+.productDetails p{
+    font-size: larger;
+    font-family: 'Gexo Light';
+}
+.productDetails h4{
+    font-size: x-large;
+    font-family: 'Montserrat';
+}
+.productTags{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+.productDetails span{
+    text-transform: uppercase;
+    vertical-align: middle;
+    font-size: x-small;
+    background: #606777;
     color: #fff;
-    box-shadow: 0px 3px 10px 2px #2F3FB7;
+    padding: 3px 5px;
+    border-radius: 10px;
+    margin: 2px;
+    font-family: 'Gexo Bold';
 }
-.productCard > h1{
-    font-size: 50px;
+.productButton{
+    margin-top: 20px;
+    position: relative;
+    z-index: 2;
 }
-.productCard > p{
-    font-size: 18px;
-}
-.productCard > a{
-    text-align: center;
-    background: #FF3F65;
-    box-shadow: inset 0px 3px 5px #d23453;
+.productButton a{
+    background: #29548E;
     color: #fff;
-    padding: 5px 15px;
-    border-radius: 20px;
+    border-radius: 15px;
+    font-family: "Gexo Bold";
+    text-transform: uppercase;
     text-decoration: none;
+    padding: 10px 10px;
 }
-.productCard > img{
-    max-width: 300px;
+
+
+  /* Nu este necesar să mai folosiți :hover aici, deoarece clasa este adăugată/eliminată din JavaScript */
+  
+.productPrix{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 95px;
+    height: 95px;
+    justify-content: space-around;
+    flex-direction: row;
+    font-family: 'Anton';
+    text-transform: uppercase;
+    text-align: left;
+    color: #fff;
+    align-items: center;
+    background-image: url(../img/Prix.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.productPrix h1{
+    margin-left: 5px;
+    font-size: 55px;
+}
+.productPrix span{
     width: 100%;
+    font-size: 30px;
+}
+.productPrix p{
+    margin-top: -5px;
+    margin-left: -3px;
+    font-size: 15px;
 }

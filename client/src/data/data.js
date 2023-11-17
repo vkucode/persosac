@@ -1,6 +1,3 @@
-import sacPoigneeBlancLogo from "../assets/img/Sac_PoignetBlanc.png";
-import sacPoigneeBrun from "../assets/img/Sac_PoignetBrun.png";
-import sacPoigneePlatBlanc from "../assets/img/Sac_PoignetBlanc.png";
 import sacPlat3d from "../assets/objects/sacPlat.gltf";
 import sacSOS from "../assets/objects/sacSOS.gltf";
 import sacTors from "../assets/objects/sacTors.gltf";
@@ -18,7 +15,6 @@ export const products = [
       { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
       { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
     ],
-    img: [sacPoigneeBlancLogo, sacPoigneeBrun],
     colorSac: [
       { colorName: "Blanc", colorData: "#ffffff" },
       { colorName: "Brown", colorData: "#d7ae55" },
@@ -36,7 +32,6 @@ export const products = [
       { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
       { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
     ],
-    img: [sacPoigneeBlancLogo, sacPoigneeBrun],
     colorSac: [
       { colorName: "Blanc", colorData: "#ffffff" },
       { colorName: "Brown", colorData: "#d7ae55" },
@@ -54,7 +49,6 @@ export const products = [
       { dimensionName: "standard", dimensionsCM: "30-16-40 cm" },
       { dimensionName: "petit model", dimensionsCM: "10-15-30 cm" },
     ],
-    img: [sacPoigneeBlancLogo, sacPoigneeBrun],
     colorSac: [
       { colorName: "Blanc", colorData: "#ffffff" },
       { colorName: "Brown", colorData: "#d7ae55" },

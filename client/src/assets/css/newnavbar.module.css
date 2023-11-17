@@ -1,0 +1,48 @@
+
+.navbarMain{
+    position: fixed;
+    left: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 10px;
+    width: 100%;
+    height: fit-content;
+    max-height: 85px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #EFF1FB;
+}
+.navLink{
+    display: block;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-family: "Gexo";
+    color: black;
+    text-decoration: none;
+
+}
+.leftLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.imgContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgContainer > img{
+    width: 100px;
+}
+.rightLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.rightLinks > div > button{
+    background: transparent;
+    border: none;
+    font-size: x-large;
+}

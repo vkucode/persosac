@@ -1,0 +1,18 @@
+@font-face {
+    font-family: "Arnel";
+    src: url(../fonts/ArnelDemoRegular-1GdXB.otf);
+}
+@font-face {
+    font-family: "Gexo Light";
+    src: url(../fonts/GexoSansLight-vm1Wy.otf);
+}
+@font-face {
+    font-family: "Gexo";
+    src: url(../fonts/GexoSansRegular-lgAm5.otf);
+}
+@font-face {
+    font-family: "Gexo Bold";
+    src: url(../fonts/GexoSansBold-2OPx3.otf);
+}
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
